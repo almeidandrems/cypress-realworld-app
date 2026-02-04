@@ -4,7 +4,7 @@ describe('Real World App', () => {
     cy.visit('http://localhost:3000/')
     cy.get('[name="username"]').type('andrepra')
     cy.get('[name="password"]').type('1234')
-    cy.get('[data-test="signin-submit"]').click()
+    cy.get('[type="submit"]').click()
 
   })
 
@@ -12,7 +12,7 @@ describe('Real World App', () => {
     cy.visit('http://localhost:3000/')
     cy.get('[name="username"]').type('testecomfalha')
     cy.get('[name="password"]').type('aaa1234')
-    cy.get('[data-test="signin-submit"]').click()
+    cy.get('[type="submit"]').click()
     cy.get('[data-test="signin-error"]').should('be.visible')
     
   })

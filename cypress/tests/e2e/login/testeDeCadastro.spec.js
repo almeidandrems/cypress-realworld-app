@@ -14,7 +14,7 @@ describe('Real World App', () => {
     cy.get('[data-test="signup-submit"]').click()
   })
  
-  /*Teste de cadastro com falha, campo primeiro nome vazio,
+  /*Teste de cadastro com falha, campo "primeiro nome" vazio,
   não é possivel reazliar teste para apresentar uma mensagem de informação invalida.
   Pois o botão sing up so ativa quando as duas senhas estao certas, estao 
   nao aparece a mensagem dizendo "tenta novamente senha invalida, ou nome do user ja existe"*/
